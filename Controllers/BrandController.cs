@@ -10,5 +10,8 @@ namespace SD_115_F22SD_Assessment.Controllers
             ViewBag.PageTitle = "All Brands";
             return View(Context.Brands);
         }
+
+        
+
     }
 }

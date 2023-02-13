@@ -55,8 +55,20 @@
 }
     </tbody>
 </table>
+<br />
+<h4>Filters:</h4>
+<br />
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    <a asp-controller="Laptop" asp-action="MostExpensive">The Two Most expensive</a> |
+    <a asp-controller="Laptop" asp-action="MostAffordable">The Three Most Affordable</a> |
+    <a asp-controller="Laptop" asp-action="LaptopsByNew">All New</a> |
+    <a asp-controller="Laptop" asp-action="Index">All Refubrished</a> |
+    <a asp-controller="Laptop" asp-action="Index">All Rental</a> |
+    <a asp-controller="Laptop" asp-action="Index">Affordability Page</a> |
+    <a asp-controller="Laptop" asp-action="CompareLaptops">Compare Laptops</a> |
+    <a asp-controller="Laptop" asp-action="Index">Select by Brand</a> |
+    <a asp-controller="Laptop" asp-action="Index">Filter by Year</a> |
+    <a asp-controller="Laptop" asp-action="Index">Filter by Price</a> |
+    <a asp-controller="Laptop" asp-action="Index">Filter by Model</a> |
+    <a asp-controller="Laptop" asp-action="Index">Add New Laptop</a> |
 </div>

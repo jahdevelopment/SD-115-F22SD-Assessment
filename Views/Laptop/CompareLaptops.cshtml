@@ -1,0 +1,20 @@
+﻿@model SD_115_F22SD_Assessment.Models.ViewModels.CreateCatalogueVM
+
+<h1>Compare Laptops</h1>
+<hr />
+<br />
+<form asp-action="CompareLaptops" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <select asp-for="LaptopsCopy" asp-items="Model.Laptops"></select>
+        </div>
+        <div class="col-md-6">
+            <select asp-for="LaptopsCopy" asp-items="Model.LaptopsCopy"></select>
+        </div>
+    </div>
+</div>
+<br />
+    <input type="Submit" a asp-action="SelectedLaptops" value="Compare Laptops" />
+ <br />
+</form>

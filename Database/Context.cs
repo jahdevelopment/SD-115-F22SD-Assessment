@@ -10,6 +10,8 @@ namespace SD_115_F22SD_Assessment.Database
 
         public static HashSet<Brand> Brands = new HashSet<Brand>();
 
+        public static HashSet<Laptop> LaptopsCopy = new HashSet<Laptop>();
+
         private static int _idCount = 0;
         public static int GetIdCount()
         {
@@ -17,8 +19,9 @@ namespace SD_115_F22SD_Assessment.Database
             return _idCount;
         }
 
+        
 
-        private static void _seedMethod()
+    private static void _seedMethod()
         {
             Brand DellXPS = new Brand("Dell", "XPS13");
             Brand DellInspiron = new Brand("Dell", "Inspiron 15 7000");
@@ -84,7 +87,11 @@ namespace SD_115_F22SD_Assessment.Database
             Laptops.Add(LaptopFourteen);
             Laptops.Add(LaptopFifteen);
 
-
+            
+            foreach (Laptop l in Laptops)
+            {
+                LaptopsCopy.Add(l);
+            }
 
 
 
@@ -104,10 +111,3 @@ namespace SD_115_F22SD_Assessment.Database
         Rental
     }
 }
-//Dell Laptops:
-
-//Lenovo ThinkPad X1 Carbon(7th Gen) -Reference: 20QD000KUS
-//Lenovo IdeaPad 5 (15.6-inch) -Reference: 81YK000EUS
-//Lenovo Legion 5 (15.6-inch) -Reference: 82B5009UUS
-//Lenovo ThinkPad T14(Intel) -Reference: 20S5S0K300
-//Lenovo IdeaPad 3 (14-inch) -Reference: 81WE00B0US
